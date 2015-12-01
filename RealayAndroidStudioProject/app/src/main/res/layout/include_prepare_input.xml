@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bar_prepare"
+    style="@style/InputArea"
+    android:paddingLeft="@dimen/margin_tiny"
+    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+    <EditText
+        android:id="@+id/edit_text_password"
+        style="@style/InputTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/image_join_button"
+        android:hint="@string/enter_password"
+        android:imeOptions="actionGo"
+        android:inputType="textNoSuggestions|textVisiblePassword"
+        android:isScrollContainer="true"
+        android:singleLine="true"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/image_join_button"
+        android:layout_width="@dimen/size_input_element"
+        android:layout_height="@dimen/size_input_element"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/send"
+        android:onClick="onJoinButtonClicked"
+        android:padding="@dimen/margin_tiny"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_arrow_forward_white_48dp" />
+
+    <LinearLayout
+        android:id="@+id/group_share"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:onClick="onShareButtonClicked"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/input_button_size"
+            android:contentDescription="@string/share_location"
+            android:src="@drawable/ic_share_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:padding="@dimen/margin_small"
+            android:singleLine="true"
+            android:text="@string/share_location"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

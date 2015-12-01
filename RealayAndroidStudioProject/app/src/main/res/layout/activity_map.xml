@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.AppCompat"
+        app:popupTheme="@style/Theme.AppCompat.Light" />
+
+    <FrameLayout
+        android:id="@+id/frame_map"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bar_prepare"
+        android:layout_below="@id/toolbar" />
+
+    <ImageView
+        android:id="@+id/image_map_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@id/frame_map"
+        android:layout_alignTop="@id/frame_map"
+        android:contentDescription="@string/loading_map"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_map" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/margin_default"
+        android:background="@color/primary"
+        android:visibility="gone"
+        card_view:cardBackgroundColor="@color/primary"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_small">
+
+            <TextView
+                android:id="@+id/text_map_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:background="@color/primary"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="@dimen/margin_xlarge"
+                android:text="@string/update_play"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/button_request"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_map_error"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_xlarge"
+                android:layout_marginLeft="@dimen/margin_xlarge"
+                android:layout_marginRight="@dimen/margin_xlarge"
+                android:layout_marginStart="@dimen/margin_xlarge"
+                android:layout_marginTop="@dimen/margin_default"
+                android:background="@color/accent"
+                android:onClick="onRequestButtonClicked"
+                card_view:cardBackgroundColor="@color/accent"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:paddingBottom="8.5dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="8.5dp"
+                    android:text="@string/enable_map"
+                    android:textColor="@color/on_accent" />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <include layout="@layout/include_info_card" />
+
+    <include
+        android:id="@+id/bar_prepare"
+        layout="@layout/include_prepare_input" />
+
+    <View
+        android:id="@+id/view_password_bar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_height"
+        android:layout_above="@id/bar_prepare"
+        android:background="@drawable/drop_shadow_up" />
+
+    <include layout="@layout/toolbar_dropdown_shadow" />
+
+</RelativeLayout>

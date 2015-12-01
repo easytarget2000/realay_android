@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:background="@color/accent" />
+
+    <TextView
+        android:id="@+id/card_information"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_default"
+        android:text="@string/no_blocked_users"
+        android:textColor="@color/secondary_text"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_blocked_users"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar"
+        android:scrollbars="vertical" />
+
+    <include layout="@layout/toolbar_dropdown_shadow" />
+
+</RelativeLayout>

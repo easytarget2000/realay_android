@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_media_picker_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="?attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_photo_library_white_24dp"
+        android:drawablePadding="@dimen/margin_small"
+        android:drawableStart="@drawable/ic_photo_library_white_24dp"
+        android:gravity="center_vertical"
+        android:onClick="imageSelectorOnClick"
+        android:paddingBottom="@dimen/margin_default"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingRight="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_default"
+        android:text="@string/select_picture"
+        android:textColor="@color/on_primary"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/view_media_picker_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="?attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_photo_camera_white_24dp"
+        android:drawablePadding="@dimen/margin_small"
+        android:drawableStart="@drawable/ic_photo_camera_white_24dp"
+        android:onClick="imageSelectorOnClick"
+        android:paddingBottom="@dimen/margin_default"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingRight="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_default"
+        android:text="@string/take_photo"
+        android:textColor="@color/on_primary"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:visibility="visible" />
+
+</LinearLayout>

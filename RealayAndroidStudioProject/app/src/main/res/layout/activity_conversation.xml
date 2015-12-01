@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:theme="@style/Theme.AppCompat"
+        app:popupTheme="@style/Theme.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/card_information"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_default"
+        android:text="@string/no_messages_yet"
+        android:textColor="@color/secondary_text"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_refresh_information"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_default"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/toolbar"
+        android:text="@string/loading_older_messages"
+        android:textColor="@color/secondary_text"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_messages"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/group_conversation_input"
+        android:layout_below="@id/toolbar">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_conversation"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <View
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/group_conversation_input"
+        android:layout_below="@id/toolbar"
+        android:background="@color/shadow_hi"
+        android:onClick="coverOnClick"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shadow_height"
+        android:layout_above="@+id/group_conversation_input"
+        android:background="@drawable/drop_shadow_up" />
+
+    <include layout="@layout/toolbar_dropdown_shadow" />
+
+    <!--Input Area-->
+
+    <RelativeLayout
+        android:id="@+id/group_conversation_input"
+        style="@style/InputArea">
+
+        <include
+            android:id="@+id/include_image_selector"
+            layout="@layout/include_media_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <EditText
+            android:id="@+id/edit_text_conversation_input"
+            style="@style/InputTextView"
+            android:layout_below="@id/include_image_selector"
+            android:layout_toLeftOf="@+id/image_send_message"
+            android:layout_toRightOf="@+id/image_send_media"
+            android:imeOptions="actionSend"
+            android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+            android:isScrollContainer="true"
+            android:maxLength="1000"
+            android:maxLines="5"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/image_send_media"
+            android:layout_width="@dimen/size_input_element"
+            android:layout_height="@dimen/size_input_element"
+            android:layout_alignBottom="@id/edit_text_conversation_input"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/edit_text_conversation_input"
+            android:layout_marginLeft="@dimen/margin_tiny"
+            android:layout_marginRight="@dimen/margin_tiny"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/send"
+            android:onClick="imageSelectorOnClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_attach_file_white_24dp"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/image_send_message"
+            android:layout_width="@dimen/size_input_element"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/edit_text_conversation_input"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/edit_text_conversation_input"
+            android:layout_marginLeft="@dimen/margin_tiny"
+            android:layout_marginRight="@dimen/margin_tiny"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/send"
+            android:onClick="onSendButtonClicked"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_send_white_24dp"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_input_blocker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/group_conversation_input"
+        android:layout_alignTop="@id/group_conversation_input"
+        android:background="@color/primary_dark"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:lines="2"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

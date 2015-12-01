@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Realay.NoStatusBar" parent="Theme.Realay">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="Theme.Realay.NoNavigationBar" parent="Theme.Realay">
+
+    </style>
+
+</resources>

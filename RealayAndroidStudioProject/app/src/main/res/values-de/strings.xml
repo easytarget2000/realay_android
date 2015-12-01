@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="add_contact">Zu Kontakten hinzufügen</string>
+    <string name="add_link_facebook">Link zu deinem Facebook-Profil anzeigen</string>
+    <string name="advise">Hinweis</string>
+    <string name="allow_storage">
+        Um Google Maps in Realay zu benutzen, ermögliche bitte den Speicherzugriff.
+    </string>
+    <string name="always_download">
+        Immer eine aktuelle Liste der Realays in deiner Stadt laden.
+    </string>
+    <string name="app_restarted">Realay musste neugestartet werden.</string>
+    <string name="ban_user">Dauerhaft Verweisen</string>
+    <string name="before_can_join">
+        Bevor es los geht, musst du dich im Bereich aufhalten,
+        den dir der Kreis auf der Karte zeigt.
+        \n\nÜberprüfe die Standort-Einstellungen,
+        falls deine Position nicht stimmt.
+    </string>
+    <string name="block">Blockieren</string>
+    <string name="block_report">Blockieren &amp; Melden</string>
+    <string name="block_user">Benutzer blockieren</string>
+    <string name="blocked_users">Blockierte Benutzer</string>
+    <string name="cancelled_login">Die Anmeldung wurde abgebrochen.</string>
+    <string name="cannot_locate">
+        Bitte ermögliche den Standortzugriff,
+        damit nach Realays in deiner Stadt gesucht werden kann.
+    </string>
+    <string name="update_play">
+        Es kann keine Karte angezeigt werden.\n
+        Bitte installiere die neueste Version der Google Play Dienste.
+    </string>
+    <string name="cannot_upload">
+        Diese Datei kann im Moment nicht hochgeladen werden.
+        \nBitte überprüfe deine Internetverbindung und versuche es später noch mal.</string>
+    <string name="copy_message">Nachricht kopieren</string>
+    <string name="chats">Private Chats</string>
+    <string name="choose_language">
+        Bitte wähle die Sprache, in der du diese Nachricht teilen möchtest.
+    </string>
+    <string name="choose_user_name">Wähle deinen Namen.</string>
+    <string name="constant_updates">Hintergrund-Updates</string>
+    <string name="continue_">Weiter</string>
+    <string name="currently_distance_away">Du bist %1$s entfernt.</string>
+    <string name="currently_here">Du befindest dich zurzeit hier.</string>
+    <string name="delete_conversation_with">
+        Möchtest du wirklich den Chat mit %1$s löschen?
+    </string>
+    <string name="details">Details</string>
+    <string name="directions">Navigation</string>
+    <string name="displays_blocked">
+        Hier werden Dir die Benutzer angezeigt, die du zurzeit blockiert hast.
+    </string>
+    <string name="do_you_want_to_ban">Möchtest du %1$s dauerhaft rausschicken?</string>
+    <string name="do_you_want_to_block">Möchtest du %1$s blockieren?</string>
+    <string name="do_you_want_to_kick">Möchtest du %1$s rausschicken?</string>
+    <string name="the_person_will">Die Person wird dich nicht mehr kontaktieren können.</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="edit_profile">Profil bearbeiten</string>
+    <string name="enter_password">Bitte Eintrittspasswort eingeben.</string>
+    <string name="email_address">Email-Adresse</string>
+    <string name="enable_map">Karte aktivieren</string>
+    <string name="enable_network">
+        Bitte aktiviere den Standortzugriff in den Systemeinstellungen deines Geräts.
+        \n\nSo stellt Realay sicher, dass du nur mit Leuten chattest,
+        die sich wirklich um dich herum befinden.
+        \n\nGPS/Hohe Genauigkeit ist optional.
+    </string>
+    <string name="enable_notifications">Alle Benachrichtigungen</string>
+    <string name="error_default">Ein Fehler trat auf. Tut uns leid!</string>
+    <string name="error_open_file_type">
+        Dieser Dateityp kann nicht verarbeitet werden. Bitte wähle eine andere Datei.
+    </string>
+    <string name="event_ended">Das Realay, in dem du warst, endete vor einer Weile.</string>
+    <string name="fb_name">Facebook-Benutzername</string>
+    <string name="find_the_password">
+        Üblicherweise findest du das Passwort am Eingang des Realays
+        oder an einer besonderen, z.Bsp. zentralen Stelle.
+        Vielleicht kennt jemand in deiner Nähe das Passwort.
+    </string>
+    <string name="feel_free_to_join">Du kannst gerne wiederkommen.</string>
+    <string name="get_password_to_join">
+        Frage jemanden nach dem Passwort, um diesem Realay beizutreten.
+    </string>
+    <string name="has_been_blocked">Du hast %1$s blockiert.</string>
+    <string name="has_left">%1$s hat %2$s verlassen.</string>
+    <string name="header_picture">Titelbild</string>
+    <string name="if_used_before">
+        Falls du Realay auf diesem Gerät zuvor bereits genutzt hast,
+        kannst du deinen alten Benutzernamen eingeben,
+        um dich in dein bestehendes Profil einzuloggen.
+    </string>
+    <string name="hours">Zeiten</string>
+    <string name="ig_name">Instagram-Benutzername</string>
+    <string name="join">Betreten</string>
+    <string name="join_to_share">
+        Um eine Datei mit anderen zu teilen,
+        musst du einem Realay beigetreten sein.
+    </string>
+    <string name="kick_user">Benutzer Verweisen</string>
+    <string name="image_sharing">Bild Teilen</string>
+    <string name="imperial_units">Amerikanische Maßeinheiten</string>
+    <string name="label_users">Alle Benutzer</string>
+    <string name="loading_older_messages">Lade ältere Nachrichten…</string>
+    <string name="loading_map">Karte lädt.</string>
+    <string name="loading_messages">Lade Nachrichten…</string>
+    <string name="loading_user">Lade Benutzerliste…</string>
+    <string name="logging_in">Einloggen…</string>
+    <string name="login">Login</string>
+    <string name="location_awareness">Dein Standort</string>
+    <string name="location_enabled">Der Standort-Service wurde aktiviert.</string>
+    <string name="location_settings">Standorteinstellungen</string>
+    <string name="logged_in_until">Du kannst noch bis %1$s eingeloggt bleiben.</string>
+    <string name="manage_location">Standorteinstellungen bearbeiten</string>
+    <string name="map">Karte</string>
+    <string name="map_layers">Kartenansicht wechseln</string>
+    <string name="message_copied">Nachricht kopiert.</string>
+    <string name="more_information">Mehr Informationen</string>
+    <string name="my_profile">Mein Profil</string>
+    <string name="name_not_empty">Dein Benutzername darf nicht leer sein.</string>
+    <string name="near_you">In Deiner Nähe</string>
+    <string name="new_private_messages">%d neue private Nachrichten.</string>
+    <string name="new_public_messages">%d neue öffentliche Nachrichten.</string>
+    <string name="no_blocked_users">
+        Du hast niemanden blockiert.
+        \n\nFalls du nicht möchtest, dass dich eine Person kontaktiert,
+        berühre und halte eine ihrer Nachrichten im öffentlichen Chat
+        oder wähle \'Benutzer Blockieren\' im Menü der privaten Unterhaltung.
+    </string>
+    <string name="no_messages_yet">
+        Willkommen!
+        \n\nEs gibt noch keine öffentlichen Nachrichten hier.
+        \n\nSag Hallo!
+    </string>
+    <string name="no_private_conversations">
+        In diesem Realay hast du zurzeit keine privaten Unterhaltungen.
+        \n\nWähle eine Person in der Benutzerliste, um einen Chat zu starten.
+    </string>
+    <string name="no_realays_found">
+        In deiner Stadt konnten keine Realays gefunden werden.
+        \nBitte versuche es später noch mal.
+    </string>
+    <string name="no_time_restriction">Ohne Zeitbeschränkung</string>
+    <string name="no_users">
+        Im Moment ist niemand in diesem Realay online außer dir.
+        \n\nLade jemanden in deiner Nähe ein.
+    </string>
+    <string name="not_started_yet">
+        Die Veranstaltung dieses Realays hat noch nicht begonnen. Bitte warte bis %1$s.
+    </string>
+    <string name="not_receive_location_hints">
+        Bitte beachte, dass du keine Standorthinweise erhälst,
+        wenn du alle Benachrichtigungen deaktivierst.
+    </string>
+    <string name="notifications">Benachrichtigungen</string>
+    <string name="notify_me_about_everything">
+        Benachrichtige mich über alles, was im öffentlichen Chat eines Realays passiert.
+    </string>
+    <string name="notify_me_about_private">
+        Benachrichtige mich über Nachrichten, die nur an mich gesendet werden.
+    </string>
+    <string name="number_of_users">Aktive Benutzer</string>
+    <string name="ongoing">Hat begonnen.</string>
+    <string name="only_one_at_a_time">
+        Du kannst immer nur in einem Realay angemeldet sein.
+        \n\nWenn du gehst, wirst du keine Nachrichten mehr erhalten.
+    </string>
+    <string name="part_of_event">
+        This Realay was part of an event that ended at %1$s.
+    </string>
+    <string name="part_of_event_stay">
+        Dieses Realay gehört zu einem Event, das %1$s endet.
+        \n\nDu kannst bis %2$s eingeloggt bleiben.
+    </string>
+    <string name="picture">Bild</string>
+    <string name="phone_number">Telefonnummer</string>
+    <string name="photo_message">Bildnachricht</string>
+    <string name="private_chats">Private Chats</string>
+    <string name="private_conversation">Privater Chat</string>
+    <string name="private_messages">Private Nachrichten</string>
+    <string name="profile_picture">Profilbild</string>
+    <string name="public_chat_messages">Öffentliche Nachrichten</string>
+    <string name="public_or_private">
+        Möchtest du dieses Bild öffentlich mit allen teilen oder einer Person privat schicken?
+    </string>
+    <string name="requested_to_leave">Du wurdest gebeten zu gehen.</string>
+    <string name="return_location" formatted="false">
+        Bitte komm bis %1$s zurück.
+        \n\nLass den Mobilfunknetz-Standortzugriff aktiviert.
+        \n\nWir empfehlen WLAN zu aktivieren.
+    </string>
+    <string name="return_until">Bitte komm bis %1$s zurück.</string>
+    <!--<string name="road_map">Straßenkarte</string>-->
+    <string name="save">Speichern</string>
+    <string name="security">Sicherheit</string>
+    <string name="select_picture">Ein Bild auswählen</string>
+    <string name="select_sharing_language">
+        Sharing-Sprache
+    </string>
+    <string name="send">Senden</string>
+    <string name="send_privately">Privat versenden</string>
+    <string name="send_report">
+        Zusätzlich zum Blockieren kannst du uns eine automatische Meldung
+        über diese Person schicken.
+        \n\nDu kannst die Blockierung jederzeit in den App-Einstellungen wieder aufheben.
+    </string>
+    <string name="send_to_all">An alle versenden</string>
+    <string name="session_terminated">Deine Sitzung wurde beendet.</string>
+    <string name="settings">Einstellungen</string>
+    <string name="share_location">Standort Teilen</string>
+    <string name="size">Größe</string>
+    <string name="status_message">Statusnachricht</string>
+    <string name="stay_in_boundaries">
+        Bitte bleibe im Bereich des Realays
+        und ermögliche das regelmäßige Bestätigen deines Standorts.
+    </string>
+    <string name="show_profile">Profil anzeigen</string>
+    <string name="take_photo">Ein Foto aufnehmen</string>
+    <string name="takes_longer">…</string>
+    <string name="tap_to_hide">Zum Schließen berühren</string>
+    <string name="terrain">Gelände</string>
+    <string name="timeout_occurred">
+        Es konnte sich für eine Weile nicht mit dem Internet verbunden werden,
+        um neue Nachrichten zu empfangen.
+    </string>
+    <string name="too_late">Zu Spät</string>
+    <string name="twitter_name">Twitter-Benutzername</string>
+    <string name="try_again">Bitte versuche es erneut.</string>
+    <string name="unblock">Aufheben</string>
+    <string name="unlink_facebook">Verbindung mit Facebook aufheben</string>
+    <string name="until">Bis</string>
+    <string name="use_imperial">Benutze Fuß, Yard und Meilen anstatt Meter und Kilometer.</string>
+    <string name="users">Alle Benutzer</string>
+    <string name="want_to_leave">Möchtest du wirklich dieses Realay verlassen?</string>
+    <string name="website">Webseite</string>
+    <string name="where_are_you">Wo bist du?</string>
+    <string name="wrong_password">Falsches Passwort für %1$s.</string>
+
+</resources>

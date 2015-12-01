@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_room_details"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/group_room_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_room_title"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <!-- Address Row-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_boundary">
+
+            <ImageView
+                style="@style/DetailIconImageView"
+                android:src="@drawable/ic_map_white_36dp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/text_room_address"
+                style="@style/DetailText"
+                android:layout_centerVertical="true"
+                android:maxLines="3" />
+
+            <include layout="@layout/include_detail_divider" />
+        </RelativeLayout>
+
+        <!-- Size Row-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_boundary">
+
+            <ImageView
+                style="@style/DetailIconImageView"
+                android:contentDescription="@string/size"
+                android:src="@drawable/ic_track_changes_black_24dp" />
+
+            <TextView
+                android:id="@+id/text_room_size"
+                style="@style/DetailText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/margin_default"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/text_room_size_note"
+                style="@style/DetailTextNote"
+                android:text="@string/size" />
+
+            <include layout="@layout/include_detail_divider" />
+        </RelativeLayout>
+
+        <!-- Hours Row -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_boundary">
+
+            <ImageView
+                style="@style/DetailIconImageView"
+                android:src="@drawable/ic_access_time_black_24dp" />
+
+            <TextView
+                android:id="@+id/text_room_time"
+                style="@style/DetailText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/margin_default"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/text_room_time_note"
+                style="@style/DetailTextNote" />
+
+            <include
+                android:id="@+id/divider_time"
+                layout="@layout/include_detail_divider"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <!-- User Count Row-->
+
+        <RelativeLayout
+            android:id="@+id/group_room_user_count"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_boundary"
+            android:visibility="gone">
+
+            <ImageView
+                style="@style/DetailIconImageView"
+                android:src="@drawable/ic_people_white_24dp" />
+
+            <TextView
+                android:id="@+id/text_room_user_count"
+                style="@style/DetailText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/margin_default"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/DetailTextNote"
+                android:text="@string/number_of_users" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

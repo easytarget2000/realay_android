@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="language_choice_labels">
+        <item>Deutsch</item>
+        <item>Englisch</item>
+    </string-array>
+
+    <string-array name="language_choice_ids">
+        <item>@string/language_code_german</item>
+        <item>@string/language_code_english</item>
+    </string-array>
+
+    <string-array name="conversation_dialog_items">
+        <item>Chat löschen</item>
+    </string-array>
+
+</resources>

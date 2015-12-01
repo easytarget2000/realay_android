@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_join"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transition_background"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progress_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:indeterminateOnly="true"
+        android:indeterminateTint="@android:color/white"
+        android:theme="@style/Theme.AppCompat" />
+
+    <ImageView
+        android:id="@+id/image_check_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:contentDescription="@string/join"
+        android:src="@drawable/ic_places_bubbled_128dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_join_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_join"
+        android:gravity="center"
+        android:text="@string/logging_in"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

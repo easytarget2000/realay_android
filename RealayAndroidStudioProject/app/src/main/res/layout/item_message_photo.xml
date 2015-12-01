@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ConversationRow">
+
+    <include
+        layout="@layout/include_user_icon" />
+
+    <RelativeLayout
+        android:id="@+id/group_message_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/margin_message_end"
+        android:layout_toRightOf="@id/image_user_icon"
+        android:background="@drawable/bubble_left"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:layout_marginTop="-4dp"
+            android:id="@+id/text_message_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/group_message_content"
+            android:layout_width="@dimen/image_size_message"
+            android:layout_height="@dimen/image_size_message"
+            android:layout_below="@id/text_message_sender"
+            android:background="@drawable/shape_rounded_rect"
+            android:padding="@dimen/margin_tiny">
+
+            <ImageView
+                android:id="@+id/image_message_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/shape_rounded_rect"
+                android:contentDescription="@string/photo_message"
+                android:scaleType="center"
+                android:src="@drawable/ic_image_white_48dp" />
+
+            <ProgressBar
+                android:id="@+id/progress_media"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/margin_default"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/include_message_time" />
+
+</RelativeLayout>
+

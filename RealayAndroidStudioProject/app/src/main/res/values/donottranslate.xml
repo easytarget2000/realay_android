@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Realay</string>
+    <string name="facebook_app_id"></string>
+    <string name="default_status">Send me a RealHey!</string>
+    <string name="language_code_english">en</string>
+    <string name="language_code_german">de</string>
+    <string name="lorem">
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </string>
+    <string name="placeholder">---</string>
+    <string name="placeholder_number">24</string>
+    <string name="tag_image_view_last_finished">last_finished</string>
+    <string name="tag_image_view_object_id">object_id</string>
+    <string name="tag_image_view_set_hi_res">set_hi_res</string>
+    <string name="tag_image_view_image_id">image_id</string>
+
+    <string name="using_realay_at">
+        I am using the Realay app at %1$s to chat with everyone around me.
+        Visit %2$s if you want to join me here.
+    </string>
+    <string name="using_realay_at_ger">
+        Ich benutze die Realay App, um mit Leuten zu chatten, die auch bei %1$s sind.
+        Mehr Infos auf %2$s
+    </string>
+
+    <string name="latitude_longitude">LAT: %1$f\nLNG: %2$f</string>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/location_awareness">
+        <PreferenceScreen
+            android:summary="@string/enable_network"
+            android:title="@string/manage_location">
+            <intent android:action="android.settings.LOCATION_SOURCE_SETTINGS" />
+        </PreferenceScreen>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_background_update"
+            android:summary="@string/always_download"
+            android:title="@string/constant_updates" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_use_imperial"
+            android:summary="@string/use_imperial"
+            android:title="@string/imperial_units" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/notifications">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_notifications_public"
+            android:summary="@string/notify_me_about_everything"
+            android:title="@string/public_chat_messages" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_notifications_private"
+            android:summary="@string/notify_me_about_private"
+            android:title="@string/private_messages" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/security">
+
+        <Preference
+            android:summary="@string/displays_blocked"
+            android:title="@string/blocked_users">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="org.eztarget.realay.ui.BlockedUsersActivity"
+                android:targetPackage="org.eztarget.realay" />
+        </Preference>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

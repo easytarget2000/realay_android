@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background">
+
+        <!-- Room List -->
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_rooms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_rooms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadeScrollbars="false"
+                android:scrollbars="vertical" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <!-- Toolbar -->
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!-- Information View Background & Animation Filler-->
+
+    <View
+        android:id="@+id/view_information_background"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:clickable="true"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/view_information_circle"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_circle_primary"
+        android:visibility="gone" />
+
+    <!-- Information View - Content-->
+
+    <RelativeLayout
+        android:id="@+id/view_information_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_information"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="@dimen/margin_xlarge"
+            android:text="@string/no_realays_found"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:id="@+id/group_action_progress"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_below="@id/text_information"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:padding="@dimen/margin_default">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/button_action"
+                style="@style/FloatingActionButton"
+                android:layout_centerInParent="true"
+                android:onClick="onActionButtonClicked"
+                android:src="@drawable/ic_refresh_white_36dp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateOnly="true"
+                android:indeterminateTint="@android:color/white"
+                android:theme="@style/Theme.AppCompat"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_conversations"
+        android:title="@string/chats"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:actionLayout="@layout/action_bar_notification"
+        app:showAsAction="always">
+    </item>
+    <!--android:icon="@drawable/ic_chat_white_36dp"-->
+</menu>

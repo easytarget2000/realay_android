@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.AppCompat" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_default">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_user_icon"
+                    android:layout_width="@dimen/profile_editor_image_icon"
+                    android:layout_height="@dimen/profile_editor_image_icon"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_circle_primary"
+                    android:contentDescription="@string/profile_picture"
+                    android:onClick="imageSelectorOnClick"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_photo_camera_white_24dp" />
+
+                <EditText
+                    android:id="@+id/edit_user_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_default"
+                    android:layout_toLeftOf="@id/image_user_icon"
+                    android:layout_toStartOf="@id/image_user_icon"
+                    android:inputType="textCapWords"
+                    android:maxLength="80" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_media_menu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_user_name"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/primary"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp">
+
+                    <include
+                        layout="@layout/include_media_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_large" />
+
+            <!--STATUS MESSAGE-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:contentDescription="@string/status_message"
+                    android:src="@drawable/ic_comment_black_24dp"
+                    android:tint="@color/primary"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/edit_user_status"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_default"
+                    android:hint="@string/status_message"
+                    android:inputType="textShortMessage|textCapSentences"
+                    android:maxLength="140"
+                    android:singleLine="false" />
+
+            </LinearLayout>
+
+            <!--E-MAIL ADDRESS-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:contentDescription="@string/email_address"
+                    android:src="@drawable/ic_mail_black_24dp"
+                    android:tint="@color/primary"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/edit_user_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_default"
+                    android:hint="@string/email_address"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="80" />
+
+            </LinearLayout>
+
+            <!--PHONE NUMBER-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:contentDescription="@string/phone_number"
+                    android:src="@drawable/ic_phone_black_24dp"
+                    android:tint="@color/primary"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/edit_user_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_default"
+                    android:gravity="bottom"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:maxLength="40" />
+
+            </LinearLayout>
+
+            <!--WEBSITE-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:contentDescription="@string/website"
+                    android:src="@drawable/ic_web_black_24dp"
+                    android:tint="@color/primary"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/edit_user_website"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_default"
+                    android:gravity="bottom"
+                    android:hint="@string/website"
+                    android:inputType="text"
+                    android:maxLength="40" />
+
+            </LinearLayout>
+
+            <include layout="@layout/include_divider_large" />
+
+            <!--Facebook handle-->
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_default"
+                android:onClick="onFacebookClick"
+                card_view:cardBackgroundColor="#448AFF"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="6dp">
+
+                <TextView
+                    android:id="@+id/text_facebook_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="8.5dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="8.5dp"
+                    android:gravity="center"
+                    android:text="@string/add_link_facebook"
+                    android:textColor="@android:color/white" />
+
+            </android.support.v7.widget.CardView>
+
+            <!--Instagram Handle-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:src="@drawable/ic_instagram_48dp"
+                    android:tint="@color/primary"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/edit_user_ig"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_default"
+                    android:gravity="bottom"
+                    android:hint="@string/ig_name"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="80" />
+
+            </LinearLayout>
+
+            <!--Twitter handle-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:src="@drawable/ic_twitter_48dp"
+                    android:tint="@color/primary"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/edit_user_twitter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_default"
+                    android:gravity="bottom"
+                    android:hint="@string/twitter_name"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="80" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/toolbar_dropdown_shadow" />
+
+</RelativeLayout>

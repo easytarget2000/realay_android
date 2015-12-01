@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_detail_divider"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginEnd="@dimen/margin_default"
+    android:layout_marginLeft="@dimen/list_item_boundary"
+    android:layout_marginRight="@dimen/margin_default"
+    android:layout_marginStart="@dimen/list_item_boundary"
+    android:background="@color/divider" />

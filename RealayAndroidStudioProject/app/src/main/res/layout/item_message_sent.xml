@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ConversationRow"
+    tools:ignore="RtlSymmetry">
+
+    <RelativeLayout
+        android:layout_marginRight="@dimen/margin_small"
+        android:id="@+id/group_message_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_message_end"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bubble_right"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/text_message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:text="@string/lorem"
+            android:minWidth="@dimen/min_width_message_content"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/include_message_time" />
+
+</RelativeLayout>
+
